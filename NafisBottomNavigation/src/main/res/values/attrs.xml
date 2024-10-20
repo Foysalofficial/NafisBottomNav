@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MeowBottomNavigation">
+        <attr name="mbn_defaultIconColor" format="color" />
+        <attr name="mbn_selectedIconColor" format="color" />
+        <attr name="mbn_backgroundBottomColor" format="color" />
+        <attr name="mbn_circleColor" format="color" />
+        <attr name="mbn_countTextColor" format="color" />
+        <attr name="mbn_countBackgroundColor" format="color" />
+        <attr name="mbn_countTypeface" format="string" />
+        <attr name="mbn_rippleColor" format="color" />
+        <attr name="mbn_shadowColor" format="color" />
+        <attr name="mbn_hasAnimation" format="boolean" />
+    </declare-styleable>
+
+</resources>
