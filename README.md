@@ -1,7 +1,7 @@
 # Nafis Bottom Navigation Updated
 A simple & curved & material bottom navigation for Android written in **Kotlin** with ♥ .
 
-![](https://github.com/shetmobile/MeowBottomNavigation/raw/master/resources/Preview.gif)
+![](https://github.com/shetmobile/NafisBottomNavigation/raw/master/resources/Preview.gif)
 
 ## Download
 
@@ -119,17 +119,17 @@ bottomNavigation.setOnClickMenuListener {
 If you are Java Developer, use this examples :
 
 ```java
-bottomNavigation.setOnClickMenuListener(new Function1<MeowBottomNavigation.Model, Unit>() {
+bottomNavigation.setOnClickMenuListener(new Function1<NafisBottomNavigation.Model, Unit>() {
             @Override
-            public Unit invoke(MeowBottomNavigation.Model model) {
+            public Unit invoke(NafisBottomNavigation.Model model) {
                 // YOUR CODES
                 return null;
             }
         });
 
-bottomNavigation.setOnShowListener(new Function1<MeowBottomNavigation.Model, Unit>() {
+bottomNavigation.setOnShowListener(new Function1<NafisBottomNavigation.Model, Unit>() {
             @Override
-            public Unit invoke(MeowBottomNavigation.Model model) {
+            public Unit invoke(NafisBottomNavigation.Model model) {
                 // YOUR CODES
                 return null;
             }
