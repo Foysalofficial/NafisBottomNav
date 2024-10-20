@@ -45,6 +45,45 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61"
 }
 ```
+
+```android
+android {
+    namespace "com.demo.paka"
+    compileSdkVersion 34
+
+    defaultConfig {
+        applicationId "com.demo.paka"
+        minSdkVersion 21
+        //noinspection EditedTargetSdkVersion
+        targetSdkVersion 34
+        versionCode 3
+        versionName "1.1"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    buildFeatures {
+        dataBinding true
+    }
+
+}
+
+```
+
 ## 😍 Donate & Support
 
 We are developing this framework in open source community without financial planning but the maintenance & preparing updates at periodic times is Time-consuming.
