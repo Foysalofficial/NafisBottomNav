@@ -1,7 +1,7 @@
 # Nafis Bottom Navigation Updated
 A simple & curved & material bottom navigation for Android written in **Kotlin** with ♥ .
 
-![](https://github.com/shetmobile/NafisBottomNavigation/raw/master/resources/Preview.gif)
+![](https://github.com/shetmobile/MeowBottomNavigation/raw/master/resources/Preview.gif)
 
 ## Download
 
@@ -200,50 +200,50 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigation.setCount(ID_NOTIFICATION, "115");
 
-        bottomNavigation.setOnShowListener(new NafisBottomNavigation.OnShowListener() {
+        bottomNavigation.setOnShowListener(new Function1<NafisBottomNavigation.Model, Unit>() {
             @Override
-            public void onShow(NafisBottomNavigation.Model item) {
+            public Unit invoke(NafisBottomNavigation.Model model) {
                 String name = "";
-
-                if (item.getId() == ID_HOME) {
+                if (model.getId() == ID_HOME) {
                     name = "HOME";
-                } else if (item.getId() == ID_EXPLORE) {
+                } else if (model.getId() == ID_EXPLORE) {
                     name = "EXPLORE";
-                } else if (item.getId() == ID_MESSAGE) {
+                } else if (model.getId() == ID_MESSAGE) {
                     name = "MESSAGE";
-                } else if (item.getId() == ID_NOTIFICATION) {
+                } else if (model.getId() == ID_NOTIFICATION) {
                     name = "NOTIFICATION";
-                } else if (item.getId() == ID_ACCOUNT) {
+                } else if (model.getId() == ID_ACCOUNT) {
                     name = "ACCOUNT";
                 }
 
-                tvSelected.setText(getString(R.string.main_page_selected, name));
+                return null;
             }
         });
 
-        bottomNavigation.setOnClickMenuListener(new NafisBottomNavigation.OnClickMenuListener() {
+        bottomNavigation.setOnClickMenuListener(new Function1<NafisBottomNavigation.Model, Unit>() {
             @Override
-            public void onClick(NafisBottomNavigation.Model item) {
+            public Unit invoke(NafisBottomNavigation.Model model) {
                 String name = "";
 
-                if (item.getId() == ID_HOME) {
+                if (model.getId() == ID_HOME) {
                     name = "HOME";
-                } else if (item.getId() == ID_EXPLORE) {
+                } else if (model.getId() == ID_EXPLORE) {
                     name = "EXPLORE";
-                } else if (item.getId() == ID_MESSAGE) {
+                } else if (model.getId() == ID_MESSAGE) {
                     name = "MESSAGE";
-                } else if (item.getId() == ID_NOTIFICATION) {
+                } else if (model.getId() == ID_NOTIFICATION) {
                     name = "NOTIFICATION";
-                } else if (item.getId() == ID_ACCOUNT) {
+                } else if (model.getId() == ID_ACCOUNT) {
                     name = "ACCOUNT";
                 }
             }
         });
 
-        bottomNavigation.setOnReselectListener(new NafisBottomNavigation.OnReselectListener() {
+        bottomNavigation.setOnReselectListener(new Function1<NafisBottomNavigation.Model, Unit>() {
             @Override
-            public void onReselect(NafisBottomNavigation.Model item) {
-                Toast.makeText(MainActivity.this, "Item " + item.getId() + " is reselected.", Toast.LENGTH_LONG).show();
+            public Unit invoke(NafisBottomNavigation.Model model) {
+                Toast.makeText(MainActivity.this, "Item " + model.getId() + " is reselected.", Toast.LENGTH_LONG).show();
+                return null;
             }
         });
 
